@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==================== UNICONS ====================-->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/combo.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+
+    <title>www.emmanuel-sandoval.com.mx</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+
+        <nav class="nav contaider" id="header">
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <!-- <i id="" class="uil uil-home nav__icon"></i>Home -->
+                            <span id="i-inicio">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link active-link" style="width:75px">
+                            <!-- <i id="i-acerca" class="uil uil-user nav__icon"></i>About me -->
+                            <span id="i-acerca">About me</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#file" class="nav__link active-link">
+                            <!-- <i id="cv" class="uil uil-file nav__icon"></i>CV -->
+                            <span id="cv">CV</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link active-link">
+                            <!-- <i id="servicios" class="uil uil-suitcase nav__icon"></i>Services -->
+                            <span id="i-servicios">Services</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link active-link">
+                            <!-- <i id="portafolio" class="uil uil-scenery nav__icon"></i>Portafolio -->
+                            <span id="i-portafolio">Portafolio</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link active-link">
+                            <!-- <i id="contactanos" class="uil uil-message nav__icon"></i>Contact -->
+                            <span id="i-contactanos">Contact</span>
+                        </a>
+                    </li>
+                    <select class="nav__item nav__link active-link-combo" id="idioma" onchange="cambiarIdioma()">
+                        <option id="id_select" value="">Select language</option>
+                        <option id="es" value="es">Spanish</option>
+                        <option id="en" value="en">English</option>
+                    </select>
+
+                </ul>
+                <br>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+
+                <i class="uil uil-translate translate-icon" onclick="mostrarComboIdioma()"></i>
+
+            </div>
+
+            <div class="nav__btns">
+                <!--   modo darks -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+
+                  <div>
+                       <a href="#" class="nav__logo">
+                        <img src="assets/img/icon--blue.png" alt="" class="logo__img">
+                       </a>
+                   </div>
+
+            </div>
+
+
+
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+
+            <div class="home__container contaider grid">
+                <div class="home__content grid">
+                    <div class="home__social" style="margin-left: 10px; margin-top:-695%;">
+
+                    </div>
+                    <div class="home__img ">
+                        <img src="assets/img/perfil.png" alt="" class="about__img">
+                    </div>
+                    <div class="home__data">
+                        <h1 id="h1-hi" class="home__title"> Hi, I am Emmanuel. </h1>
+                        <h3 id="h3-dev" class="home__subtitle">Backend Developer</h3>
+                        <p id="p_description" class="home__description">
+                            I am the Cloud Architect at Pakal Technological Solutions, a software factory that provides
+                            world-class technology services and solutions. I lead a highly skilled team specialized in
+                            technological leadership, strategy, and product delivery. Leveraging our extensive
+                            experience in digital transformation, we drive our clients' success through innovative
+                            solutions. My expertise lies in software development, with a track record of six years
+                            overcoming complex challenges in this field. My experience encompasses the development and
+                            implementation of innovative features to enhance performance and functionality.
+                        </p>
+
+                        <div class="about__buttons">
+                            <a id="id_contact" href="#contact" class="button button--center">
+                                Contact me <i class="uil uil-message button-icon"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="about__buttons">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse home__scroll-mouse"></i>
+                        <span id="id_scroll" class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home___scroll-arrow"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 id="id_about" class="section__title">About me</h2>
+            <span id="id_introduction" class="section__subtitle">Introduction</span>
+            <div class="about__container conainer grid">
+                <img src="assets/img/PAKAL-2.png" alt="" class="about__img">
+                <div class="about__data">
+                    <p id="id_about__description" class="about__description">
+                        Mr. Sandoval specializes in mobile technologies for information management and graduated in
+                        Computer Engineering from the National Technological Institute of Mexico campus (ITCH) in July
+                        2017.
+                    </p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title"> 06+</span>
+                            <span id="id_years" class="about__info-name">Years <br> Experience</span>
+
+                        </div>
+                        <div>
+                            <span class="about__info-title">7+</span>
+                            <span id="id_completed" class="about__info-name">completed<br> Projects</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">04</span>
+                            <span id="id_companies" class="about__info-name">Companies<br> Job</span>
+                        </div>
+
+                    </div>
+                    <div class="about__buttons">
+                        <a id="id_download" download="" href="assets/pdf/EmmanuelSandovalResume.pdf"
+                            class="button button--flex">
+                            Download CV<i class="uil uil-arrow-down button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+
+            <h2 id="id_technologies" class="section__title">Technologies</h2>
+            <span class="section__subtitle"></span>
+            <div class="skills__container container grid">
+                <div>
+                    <!--==================== SKILLS 1 ====================-->
+                    <div class="skills__content skills_open">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+                            <div>
+                                <h1 class="skills__titles">Front-end Developer</h1>
+                                <span id="id_more_2" class="skills_subtitle">More than 2 years</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__allow"></i>
+                        </div>
+                        <div class="skills_list grid">
+
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Angular</h3>
+                                    <span class="skills_number">20%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__angular"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills_number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">AJAX</h3>
+                                    <span class="skills_number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JSP</h3>
+                                    <span class="skills_number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    </br>
+                    <!--==================== SKILLS 2 ====================-->
+                    <div class="skills__content skills_close">
+                        <div class="skills__header">
+                            <i class="uil uil-server skills__icon"></i>
+                            <div>
+                                <h1 class="skills__titles">Back-end Developer</h1>
+                                <span id="id_more_than" class="skills_subtitle">More than 3 years</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__allow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <!-- Java -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__java"></span>
+                                </div>
+                            </div>
+
+                            <!-- Spring Boot -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Spring Boot</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__springboot"></span>
+                                </div>
+                            </div>
+
+                            <!-- Firebase -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__firebase"></span>
+                                </div>
+                            </div>
+
+                            <!-- Node.js -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Node.js</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__nodejs"></span>
+                                </div>
+                            </div>
+
+                            <!-- Express.js -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Express.js</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__expressjs"></span>
+                                </div>
+                            </div>
+
+                            <!-- Python -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python"></span>
+                                </div>
+                            </div>
+
+                            <!-- Pandas -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Pandas</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__pandas"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--==================== SKILLS 3 ====================-->
+                    <div class="skills__content skills_close">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+                            <div>
+                                <h1 class="skills__titles"> AWS Solution Architect</h1>
+                                <span id="id_less_than" class="skills_subtitle">Less than a year</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__allow"></i>
+                        </div>
+                        <div class="skills_list grid">
+
+                            <!-- Maven -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Maven</h3>
+                                    <span class="skills_number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__maven"></span>
+                                </div>
+                            </div>
+
+                            <!-- Apache Tomcat -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Apache Tomcat</h3>
+                                    <span class="skills_number">40%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__apachetomcat"></span>
+                                </div>
+                            </div>
+
+                            <!-- Bitbucket -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Bitbucket</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__bitbucket"></span>
+                                </div>
+                            </div>
+
+                            <!-- Railway -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Railway</h3>
+                                    <span class="skills_number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__railway"></span>
+                                </div>
+                            </div>
+
+                            <!-- Render -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Render</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__render"></span>
+                                </div>
+                            </div>
+
+                            <!-- Microservicios -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Microservices</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__microservicios"></span>
+                                </div>
+                            </div>
+
+                            <!-- MVC -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">MVC</h3>
+                                    <span class="skills_number">40%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__mvc"></span>
+                                </div>
+                            </div>
+
+                            <!-- Singleton -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Singleton</h3>
+                                    <span class="skills_number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__singleton"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+            <h2 id="id_rating" class="section__title">Rating</h2>
+            <span class="section__subtitle"></span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        <span id="id_education" class="skills__percentage skills__singleton">Education</span>
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i> 
+                        <span id="id_work" class="skills__percentage skills__singleton">Work</span>
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!--=============== QUALIFICATION CONTENT 1 ===============-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+
+                        <!--=============== QUALIFICATION 2 ===============-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 id="id_course_one" class="qualification__title">React and Firebase: The complete, practical course from scratch.</h3>
+                                <span class="qualification__subtitle">Udemy.</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    03/2023
+                                </div>
+                            </div>
+                        </div>
+                        <!--=============== QUALIFICATION 1 ===============-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 id="id_course_two" class="qualification__title">Microservices with Spring Boot and Spring Cloud Netflix Eureka.</h3>
+                                <span class="qualification__subtitle">Udemy</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    05/2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!--=============== QUALIFICATION 2 ===============-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 id="id_course_three" class="qualification__title">Kong Gateway Foundations.</h3>
+                                <span class="qualification__subtitle">Kong Inc.</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    11/2022
+                                </div>
+                            </div>
+                        </div>
+                        <!--=============== QUALIFICATION 1 ===============-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 id="id_course_four" class="qualification__title">Git and GitHub professional.</h3>
+                                <span class="qualification__subtitle">México</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    01/2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--=============== QUALIFICATION 2 ===============-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 id="id_course_five" class="qualification__title">Software Architecture Course</h3>
+                                <span class="qualification__subtitle">Platzi</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    11/2020
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=============== QUALIFICATION 3 ===============-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 id="id_course_six" class="qualification__title"> Hibernate and Java Spring</h3>
+                                <span class="qualification__subtitle">Platzi</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    11/2020
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--=============== QUALIFICATION 4 ===============-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div class="qualification__time">
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 id="id_course_seven" class="qualification__title">Computer engineer </h3>
+                                <span class="qualification__subtitle">Platzi</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2012/2017
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+                    
+
+                    <!--=============== QUALIFICATION CONTENT 2 ===============-->
+                    <div class="qualification__content" data-content id="work">
+
+                        <!--=============== QUALIFICATION CONTENT 1 ===============-->
+            
+                        <div class="qualification__data">
+                            <div>
+                                <h3 id="id_engineer_one" class="qualification__title">Software architect</h3>
+                                <span class="qualification__subtitle"> Solutions Technologies Pakal| México</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    03/2024 - Actualmente.
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                    <!--=============== QUALIFICATION 2 ===============-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div class="qualification__time">
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 id="id_engineer_two"  class="qualification__title">Senior Project Engineer</h3>
+                                <span class="qualification__subtitle"> HSBC | México</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    09/2021-03/2014
+                                </div>
+                            </div>
+                        </div>
+                    <!--=============== QUALIFICATION 3 ===============-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 id="id_engineer_three" class="qualification__title">Software Engineer</h3>
+                                <span class="qualification__subtitle">AXIT | Net-Cash | México</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    03/2021-06/2021
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+
+                        <!--=============== QUALIFICATION 4 ===============-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div class="qualification__time">
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 id="id_engineer_four"  class="qualification__title">Enterprise Web Development</h3>
+                                <span class="qualification__subtitle">AXIT | Net-Cash | México</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    09/2018-05/2019
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--=============== QUALIFICATION 5 ===============-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 id="id_engineer_five" class="qualification__title">Programmer Analyst</h3>
+                                <span class="qualification__subtitle">AXITY | BBVA Andrea PYMES | México</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    02/2018-09/2018
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 id="id_services" class="section__title">Services</h2>
+            <span id="id_section__subtitle" class="section__subtitle">What do you need?</span>
+
+            <div class="services__containe container grip">
+                <!--==================== SERVICES  1====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-web-grid services__icon"></i>
+                        <h3 class="services__title">Back-end Developer</h3>
+                    </div>
+                    <span id="id_view_more_one" class="button button--flex button--small button--link services__button">Back
+                        View More
+                        <i class="uil uil-arrow-right"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">BackEnd</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_back_one" >Database creation in MySQL, Oracle, SQL Server.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_back_two">Development of APIs in Java, Node.js, Python.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_back_three">Command line UNIX handling.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_back_four">Implementation of microservices architecture.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_back_five"> Assess client needs and objectives to design appropriate cloud solutions.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_back_six"> Collaborate with development teams to configure and deploy applications in the cloud efficiently.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_back_seven"> Desarrollo de aplicaciones web utilizando Spring MVC para la capa de presentación.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_back_eight"> Implementación de algoritmos y estructuras de datos utilizando Java Collections Framework.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_back_nine"> Creación de servicios RESTful utilizando Spring Boot y Spring Web.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_back_ten"> Integración de Java con bases de datos utilizando JDBC (Java Database Connectivity).</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== SERVICES  2====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow service-icon"></i>
+                        <h3 class="services__title">Front-end Developer</h3>
+                    </div>
+                    <span id="id_view_more_two" class="button button--flex button--small button--link services__button">Back
+                        View More
+                        <i class="uil uil-arrow-right"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Web Development</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_web_one">Develop responsive web design websites and e-commerce.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_web_two">Developing web applications using React.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_web_three">Creating reusable components for modular development.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_web_four">Interacting with RESTful APIs using Angular HttpClient module.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_web_five">Implementing routing and navigation with Angular Router.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_web_six">Fetching data from external APIs and web services.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_web_seven">Working with JSON and XML data formats in AJAX requests and responses.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_web_eignt">Developing dynamic web pages using JSP technology.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_web_nine">Implementing MVC (Model-View-Controller) architecture with JSP.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_web_ten">Implementing MVC (Model-View-Controller) architecture with JSP.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== SERVICES  2====================-->
+
+                <!--==================== SERVICES  3====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-sitemap"></i>
+                        <h3 class="services__title">AWS Solution Architect</h3>
+                    </div>
+                    <span id="id_view_more_three" class="button button--flex button--small button--link services__button">Back
+                        View More
+                        <i class="uil uil-arrow-right"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Architect</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_architect_one">Creation of AWS web services.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_architect_two">Management and user creation with Amazon Cognito.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_architect_three">Creation of tables and management in DynamoDB.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_architect_four">Project management.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_architect_five">Assist clients in migrating existing applications to the cloud and modernizing their architectures.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_architect_six">Preparation of technical designs (Flowcharts, sequence diagrams).</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_architect_seven">Configurations of environments using Maven and Apache Tomcat.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_architect_eight">Implementation of Firebase.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_architect_nine">Ensuring the quality of the developed code.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p id="id_architect_ten">Collaborate with development teams to configure and deploy applications in the cloud efficiently.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portafolio</h2>
+            <span id="id_view_portafolio" class="section__subtitle">View the portfolio.</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1====================-->
+                    <div class="portafolio__content grid swiper-slide">
+                        <img src="assets/img/projects/proyecto-2.jpg" alt="" class="portfolio__img">
+                        <div class="portafolio__data">
+                            <h3 id="id_view_modern_one" class="portfolio__title">Modern websites</h3>
+                            <p class="portfolio__description"></p>
+    
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 2====================-->
+                    <div class="portafolio__content grid swiper-slide">
+                        <img src="assets/img/projects/proyecto-3.jpg" alt="" class="portfolio__img">
+                        <div class="portafolio__data">
+                            <h3 id="id_view_modern_two" class="portfolio__title">Modern websites</h3>
+                            <p class="portfolio__description"></p>
+
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 3====================-->
+                    <div class="portafolio__content grid swiper-slide">
+                        <img src="assets/img/projects/proyecto-4.jpg" alt="" class="portfolio__img">
+                        <div class="portafolio__data">
+                            <h3 id="id_view_modern_three" class="portfolio__title">Distributed systems</h3>
+                            <p class="portfolio__description"></p>
+
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 3====================-->
+                    <div class="portafolio__content grid swiper-slide">
+                        <img src="assets/img/projects/proyecto-5.jpg" alt="" class="portfolio__img">
+                        <div class="portafolio__data">
+                            <h3 id="id_view_modern_four" class="portfolio__title">Websites</h3>
+                            <p class="portfolio__description"></p>
+
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 3====================-->
+                    <div class="portafolio__content grid swiper-slide">
+                        <img src="assets/img/projects/proyecto-6.jpg" alt="" class="portfolio__img">
+                        <div class="portafolio__data">
+                            <h3 id="id_view_modern_five" class="portfolio__title">Modern websites</h3>
+                            <p class="portfolio__description"></p>
+
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 3====================-->
+                    <div class="portafolio__content grid swiper-slide">
+                        <img src="assets/img/projects/proyecto-7.jpg" alt="" class="portfolio__img">
+                        <div class="portafolio__data">
+                            <h3 id="id_view_modern_six" class="portfolio__title">Start Up</h3>
+                            <p class="portfolio__description"></p>
+
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 3====================-->
+                    <div class="portafolio__content grid swiper-slide">
+                        <img src="assets/img/projects/proyecto-8.jpg" alt="" class="portfolio__img">
+                        <div class="portafolio__data">
+                            <h3 id="id_view_modern_seven" class="portfolio__title">Modern websites</h3>
+                            <p class="portfolio__description"></p>
+
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 3====================-->
+                    <div class="portafolio__content grid swiper-slide">
+                        <img src="assets/img/projects/proyecto-9.jpg" alt="" class="portfolio__img">
+                        <div class="portafolio__data">
+                            <h3 id="id_view_modern_eight" class="portfolio__title">Responsive designs</h3>
+                            <p class="portfolio__description"></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b  swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination">
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 id="id_project_mind" class="project__title">Project</h2>
+                        <p id="id_project__description" class="project__description">Contact me now and get a 30% discount on your new project.</p>
+                    </div>
+                    <img alt="" class="project__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TESTIMONIAL ====================-->
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 id="id_contact_me" class="section__title">Contact me </h2>
+            <span class="section__subtitle"></span>
+            <div class="contact__container container grid">
+                <div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"
+                            style="font-size: 2rem;color: var(--first-color);margin-right: var(--mb-0-75);"></i>
+                        <div>
+                            <h3 id="id_phone" class="contact__title">Phone</h3>
+                            <span class="contact__subtitle">
+                                5568711608
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelopes  email__icon"
+                            style="font-size: 2rem;color: var(--first-color);margin-right: var(--mb-0-75);"></i>
+                        <div>
+                            <h3 id="id_mail" class="contact__title">Mail</h3>
+                            <span class="contact__subtitle">
+                                sandoval.morales.emmanuel@gmail.com
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-location-pin-alt location__icon"
+                            style="font-size: 2rem;color: var(--first-color);margin-right: var(--mb-0-75);"></i>
+                        <div>
+                            <h3 id="id_localizacion" class="contact__title">Location</h3>
+                            <span class="contact__subtitle">
+                                México
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form grid" action="https://formspree.io/f/mwkawqzq" method="POST">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label id="id_name" for="" class="contact__label"> Name : </label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label id="id_mail_form" for="" class="contact__label"> Mail : </label>
+                            <input type="email" name="_replyto" class="contact__input" id="email">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label id="id_project" for="" class="contact__label"> Project : </label>
+                        <input type="text" class="contact__input">
+                    </div>
+
+                    <div class="contact__content">
+                        <label id="id_message" for="" class="contact__label"> Message : </label>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+                    <div>
+
+                        <button class="button button__icon   button--flex" id="send" type="submit"
+                            onclick="validate(form.email.value)">Enviar Mensaje</button>
+                        <!-- <a  class="button button--flex" type="submit" id="send">
+                           Enviar Mensaje
+                            <i class="uil uil-message button__icon" ></i>
+                        </a> -->
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <!-- <div>
+                        <h1 class="footer__title"><img src="assets/img/icon-blue.png" alt="" class="img__logo1" style="width: 40px;height: 40px;margin-top: -13px;" /></h1>
+                        <span class="footer__subtitle"> Software Engineer </span>
+                    </div> -->
+                <ul class="footer__links">
+                    <li>
+                        <a id="id_services_footer" href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a id="id_portafolio_footer" href="#portfolio" class="footer__link">Portafolio</a>
+                    </li>
+                    <li>
+                        <a id="id_contact_footer" href="#contact" class="footer__link">Contact me</a>
+                    </li>
+                </ul>
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/globalmanuhman/" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/manuh_sandoval/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <!-- <a href="https://twitter.com/GlobalManuMan" target="_blank" class="footer__social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a> -->
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                        target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Global-Manu-Man" target="_blank" class="footer__social">
+                        <i class="uil uil-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <p class="footer__copy">© 2023 Pakal by <a href="#" target="_blank"></a>Emmanuel Sandoval All Rights
+                Reserved <a href="#" target="_blank"></a></p>
+
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-circle-up scrollup__icon"></i>
+    </a>
+
+
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/idiomas.js"></script>
+
+
+
+
+
+</body>
+
+</html>

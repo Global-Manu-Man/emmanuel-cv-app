@@ -1,0 +1,14 @@
+
+
+/* Estilos para modo responsivo */
+ @media screen and (max-width: 768px) { 
+    /* Oculta el combo de idioma */
+     #idioma {
+        display: none;
+    } 
+    /* Muestra el icono de burbuja de traducción */
+     .translate-icon { 
+         display: inline-block; /*  Asegúrate de que el icono tenga un estilo de visualización adecuado */
+        /* Agrega estilos adicionales según sea necesario */
+     } 
+}
