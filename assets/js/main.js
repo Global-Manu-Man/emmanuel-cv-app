@@ -265,19 +265,3 @@ function googleTranslateElementInit() {
         }
 
 
-
-// filepath: d:\html\cv\emmanuel-cv-app\index.html
-document.addEventListener('DOMContentLoaded', function () {
-    const themeButton = document.getElementById('theme-button');
-    const profileImg = document.getElementById('profile-img');
-    let darkMode = false;
-
-    themeButton.addEventListener('click', function () {
-        darkMode = !darkMode;
-        if (darkMode) {
-            profileImg.src = 'assets/img/perfil.jpg'; // Fondo negro
-        } else {
-            profileImg.src = 'assets/img/perfil.png'; // Fondo blanco
-        }
-    });
-});
