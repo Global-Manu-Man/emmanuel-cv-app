@@ -70,13 +70,6 @@
     }
 }
 
-/* Oculta el logo del navbar en pantallas menores a 768px */
-@media screen and (max-width: 768px) {
-    .nav__logo {
-        display: none !important;
-    }
-}
-
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
      /* HSL color mode */
@@ -471,11 +464,10 @@ img{
 
 /*==================== ABOUT ====================*/
 .about__img{
-    width: 200px;
-    max-width: 100%;
+    width: 200%;
     border-radius: .5rem;
-    display: block;
-    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
 
 }
 
