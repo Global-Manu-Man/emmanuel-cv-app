@@ -19,20 +19,22 @@
     <title>www.emmanuel.pakal.cloud</title>
 
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.emmanuel.pakal.cloud/">
-        <meta property="og:title" content="Emmanuel Sandoval | Cloud Architect & Backend Developer">
-        <meta property="og:description" content="Cloud Architect and Senior Software Engineer specialized in backend development, digital transformation, and enterprise solutions. Discover my experience, projects, and contact information.">
-        <meta property="og:image" content="https://www.emmanuel.pakal.cloud/assets/img/perfil.png">
-    
-        <!-- Twitter -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:url" content="https://www.emmanuel.pakal.cloud/">
-        <meta name="twitter:title" content="Emmanuel Sandoval | Cloud Architect & Backend Developer">
-        <meta name="twitter:description" content="Cloud Architect and Senior Software Engineer specialized in backend development, digital transformation, and enterprise solutions. Discover my experience, projects, and contact information.">
-        <meta name="twitter:image" content="https://www.emmanuel.pakal.cloud/assets/img/perfil.png">
-    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.emmanuel.pakal.cloud/">
+    <meta property="og:title" content="Emmanuel Sandoval | Cloud Architect & Backend Developer">
+    <meta property="og:description"
+        content="Cloud Architect and Senior Software Engineer specialized in backend development, digital transformation, and enterprise solutions. Discover my experience, projects, and contact information.">
+    <meta property="og:image" content="https://www.emmanuel.pakal.cloud/assets/img/perfil.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.emmanuel.pakal.cloud/">
+    <meta name="twitter:title" content="Emmanuel Sandoval | Cloud Architect & Backend Developer">
+    <meta name="twitter:description"
+        content="Cloud Architect and Senior Software Engineer specialized in backend development, digital transformation, and enterprise solutions. Discover my experience, projects, and contact information.">
+    <meta name="twitter:image" content="https://www.emmanuel.pakal.cloud/assets/img/perfil.png">
+
 </head>
 
 <body>
@@ -56,7 +58,7 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#file" class="nav__link active-link">
+                        <a href="#about" class="nav__link active-link">
                             <!-- <i id="cv" class="uil uil-file nav__icon"></i>CV -->
                             <span id="cv">CV</span>
                         </a>
@@ -79,11 +81,11 @@
                             <span id="i-contactanos">Contact</span>
                         </a>
                     </li>
-                    <select class="nav__item nav__link active-link-combo" id="idioma" onchange="cambiarIdioma()">
+<!--                     <select class="nav__item nav__link active-link-combo" id="idioma" onchange="cambiarIdioma()">
                         <option id="id_select" value="">Select language</option>
                         <option id="es" value="es">Spanish</option>
                         <option id="en" value="en">English</option>
-                    </select>
+                    </select> -->
 
                 </ul>
                 <br>
@@ -105,7 +107,6 @@
                         <img src="assets/img/icon--blue.png" alt="" class="logo__img">
                     </a>
                 </div>
-
             </div>
 
 
@@ -125,17 +126,28 @@
 
                     </div>
                     <div class="home__img ">
-                        <img src="assets/img/perfil.png" alt="" class="about__img">
+                        <!-- Cambia la extensión a .png si es necesario -->
+                        <img id="profile-img" src="assets/img/perfil.png" alt="Perfil" class="about__img">
                     </div>
                     <div class="home__data">
                         <h1 id="h1-hi" class="home__title"> Hi, I am Emmanuel. </h1>
                         <h3 id="h3-dev" class="home__subtitle">Backend Developer</h3>
                         <p id="p_description" class="home__description" style="text-align: justify; margin-right: 5px;">
-                            I am a Senior Software Engineer and Cloud Architect with over 6 years of experience in enterprise-level software development. Currently serving as Cloud Architect at Pakal Technological Solutions, I lead cross-functional teams in delivering world-class technology services and innovative digital transformation solutions.
+                            I am a Senior Software Engineer and Cloud Architect with over 6 years of experience in
+                            enterprise-level software development. Currently serving as Cloud Architect at Pakal
+                            Technological Solutions, I lead cross-functional teams in delivering world-class technology
+                            services and innovative digital transformation solutions.
                             <br><br>
-                            My expertise spans across multiple domains including backend development with Java Spring Boot, microservices architecture, and cloud platforms. I have successfully led critical projects such as the Banamex-Citibank migration, managing teams of 5-8 developers and implementing hybrid architectures that reduced deployment times by 85% and improved system performance by 50%.
+                            My expertise spans across multiple domains including backend development with Java Spring
+                            Boot, microservices architecture, and cloud platforms. I have successfully led critical
+                            projects such as the Banamex-Citibank migration, managing teams of 5-8 developers and
+                            implementing hybrid architectures that reduced deployment times by 85% and improved system
+                            performance by 50%.
                             <br><br>
-                            Throughout my career at leading financial institutions like HSBC, BBVA, Banamex, and Citibank, I have specialized in developing scalable enterprise applications, implementing secure authentication systems with JWT/OAuth2, and optimizing database performance with advanced integration solutions using technologies like IBM MQ, MongoDB, and RESTful APIs.
+                            Throughout my career at leading financial institutions like HSBC, BBVA, Banamex, and
+                            Citibank, I have specialized in developing scalable enterprise applications, implementing
+                            secure authentication systems with JWT/OAuth2, and optimizing database performance with
+                            advanced integration solutions using technologies like IBM MQ, MongoDB, and RESTful APIs.
                         </p>
 
                         <div class="about__buttons">
@@ -168,8 +180,14 @@
             <div class="about__container conainer grid">
                 <img src="assets/img/PAKAL-2.png" alt="" class="about__img">
                 <div class="about__data">
-                    <p id="id_about__description" class="about__description" style="text-align: justify; margin-right: 5px;">
-                        Senior Software Engineer specializing in enterprise-level backend development and cloud architecture. Graduated in Computer Engineering from the National Technological Institute of Mexico (ITCH) in 2017. With extensive experience in financial technology sector, I have led multiple digital transformation projects, migration initiatives, and implemented innovative solutions that have significantly improved operational efficiency and system performance across major banking institutions.
+                    <p id="id_about__description" class="about__description"
+                        style="text-align: justify; margin-right: 5px;">
+                        Senior Software Engineer specializing in enterprise-level backend development and cloud
+                        architecture. Graduated in Computer Engineering from the National Technological Institute of
+                        Mexico (ITCH) in 2017. With extensive experience in financial technology sector, I have led
+                        multiple digital transformation projects, migration initiatives, and implemented innovative
+                        solutions that have significantly improved operational efficiency and system performance across
+                        major banking institutions.
                     </p>
                     <div class="about__info" style="text-align: justify; margin-right: 5px;">
                         <div>

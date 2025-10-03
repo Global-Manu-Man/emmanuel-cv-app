@@ -70,6 +70,13 @@
     }
 }
 
+/* Oculta el logo del navbar en pantallas menores a 768px */
+@media screen and (max-width: 768px) {
+    .nav__logo {
+        display: none !important;
+    }
+}
+
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
      /* HSL color mode */
