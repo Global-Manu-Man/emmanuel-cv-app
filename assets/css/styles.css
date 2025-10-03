@@ -471,10 +471,11 @@ img{
 
 /*==================== ABOUT ====================*/
 .about__img{
-    width: 200%;
+    width: 200px;
+    max-width: 100%;
     border-radius: .5rem;
-    justify-self: center;
-    align-self: center;
+    display: block;
+    margin: 0 auto;
 
 }
 
