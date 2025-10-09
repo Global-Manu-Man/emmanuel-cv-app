@@ -265,3 +265,58 @@ function googleTranslateElementInit() {
         }
 
 
+// ...existing code...
+// Espera que el DOM cargue
+/*==================== TESTIMONIAL ====================*/
+// Igualar altura de testimonios
+window.addEventListener('DOMContentLoaded', () => {
+    // Igualar altura de las descripciones
+    const descriptions = document.querySelectorAll('.testimonial__description');
+    let maxDescHeight = 0;
+
+    descriptions.forEach(desc => {
+        desc.style.height = 'auto'; // Resetear altura
+        const height = desc.offsetHeight;
+        if (height > maxDescHeight) maxDescHeight = height;
+    });
+
+    descriptions.forEach(desc => {
+        desc.style.height = `${maxDescHeight}px`;
+    });
+
+    // Igualar altura de los headers
+    const headers = document.querySelectorAll('.testimonial__data');
+    let maxHeaderHeight = 0;
+
+    headers.forEach(header => {
+        header.style.minHeight = 'auto';
+        const height = header.offsetHeight;
+        if (height > maxHeaderHeight) maxHeaderHeight = height;
+    });
+
+    headers.forEach(header => {
+        header.style.minHeight = `${maxHeaderHeight}px`;
+    });
+
+    // Igualar altura total de las tarjetas
+    const cards = document.querySelectorAll('.testimonial__content');
+    let maxCardHeight = 0;
+
+    cards.forEach(card => {
+        const height = card.offsetHeight;
+        if (height > maxCardHeight) maxCardHeight = height;
+    });
+
+    cards.forEach(card => {
+        card.style.minHeight = `${maxCardHeight}px`;
+    });
+});
+
+// Recalcular cuando cambie el tamaño de ventana
+window.addEventListener('resize', () => {
+    location.reload(); // O vuelve a ejecutar el código anterior
+});
+
+
+
+// ...existing code...

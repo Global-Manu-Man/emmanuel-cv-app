@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/combo.css">
     <link rel="icon" type="image/png" href="assets/img/favicon-16x16.ico">
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <title>www.emmanuel.pakal.cloud</title>
 
@@ -75,13 +77,20 @@
                             <span id="i-portafolio">Portafolio</span>
                         </a>
                     </li>
+
+                    <li class="nav__item">
+                        <a href="#testimonial" class="nav__link active-link">
+                            <span id="i-testimonios">Testimonials</span>
+                        </a>
+                    </li>
+
                     <li class="nav__item">
                         <a href="#contact" class="nav__link active-link">
                             <!-- <i id="contactanos" class="uil uil-message nav__icon"></i>Contact -->
                             <span id="i-contactanos">Contact</span>
                         </a>
                     </li>
-<!--                     <select class="nav__item nav__link active-link-combo" id="idioma" onchange="cambiarIdioma()">
+                    <!--                     <select class="nav__item nav__link active-link-combo" id="idioma" onchange="cambiarIdioma()">
                         <option id="id_select" value="">Select language</option>
                         <option id="es" value="es">Spanish</option>
                         <option id="en" value="en">English</option>
@@ -127,7 +136,8 @@
                     </div>
                     <div class="home__img ">
                         <!-- Cambia la extensión a .png si es necesario -->
-                        <img id="profile-img" src="assets/img/perfil-removebg-preview.png" alt="Perfil" class="about__img">
+                        <img id="profile-img" src="assets/img/perfil-removebg-preview.png" alt="Perfil"
+                            class="about__img">
                     </div>
                     <div class="home__data">
                         <h1 id="h1-hi" class="home__title"> Hi, I am Emmanuel. </h1>
@@ -958,6 +968,7 @@
             </div>
         </section>
 
+
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title">Portafolio</h2>
@@ -1047,6 +1058,134 @@
                 <div class="swiper-pagination">
 
                 </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== TESTIMONIAL ====================-->
+        <section class="testimonial section" id="testimonial">
+            <h2 id="id_testimonial" class="section__title">Testimonials</h2>
+            <span id="id_testimonial_subtitle" class="section__subtitle">What clients say about my work</span>
+
+            <div class="testimonial__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== TESTIMONIAL 1 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <!-- <img src="assets/img/perfil-removebg-preview.png" alt="" class="testimonial__img"> -->
+                                <div>
+                                    <h3 id="id_testimonial_name_1" class="testimonial__name">Horacio de la Garza</h3>
+                                    <span id="id_testimonial_client_1" class="testimonial__client">Marketing Director</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+                        <p id="id_testimonial_description_1" class="testimonial__description">
+                        Highly recommended. There was a minimal delay in delivering the site, but they did exactly what we agreed upon.
+                        </p>
+                    </div>
+
+                    <!--==================== TESTIMONIAL 2 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <!-- <img src="assets/img/perfil-removebg-preview.png" alt="" class="testimonial__img"> -->
+                                <div>
+                                    <h3 id="id_testimonial_name_2" class="testimonial__name">Martha Cantú Vota</h3>
+                                    <span id="id_testimonial_client_2" class="testimonial__client">CEO, Hidro-Electrik</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+                        <p id="id_testimonial_description_2" class="testimonial__description">
+                        I highly recommend them because they are very professional in their work. They met all our expectations on time and delivered exactly what we wanted for our company’s website.
+                        </p>
+                    </div>
+
+                    <!--==================== TESTIMONIAL 3 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <!-- <img src="assets/img/perfil-removebg-preview.png" alt="" class="testimonial__img"> -->
+                                <div>
+                                    <h3 id="id_testimonial_name_3" class="testimonial__name">Rona Montacargas</h3>
+                                    <span id="id_testimonial_client_3" class="testimonial__client">CEO RONA</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+                        <p id="id_testimonial_description_3" class="testimonial__description">
+                        I highly recommend them because they are very professional in their work. They met all our expectations on time and delivered the website for our company exactly as we wanted.
+                        </p>
+                    </div>
+
+                    <!--==================== TESTIMONIAL 4 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <!-- <img src="assets/img/perfil-removebg-preview.png" alt="" class="testimonial__img"> -->
+                                <div>
+                                    <h3 id="id_testimonial_name_4" class="testimonial__name">Mechanical Projects LA</h3>
+                                    <span id="id_testimonial_client_4" class="testimonial__client">CEO Mecanicos LA</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+                        <p id="id_testimonial_description_4" class="testimonial__description">
+                        The interaction with Emmanuel has been very cordial, and he explained the project scope to me in detail. The site was delivered within the agreed timeframe and looks great on all devices.
+                        </p>
+                    </div>
+
+                    <!--==================== TESTIMONIAL 5 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <div>
+                                    <h3 id="id_testimonial_name_4" class="testimonial__name">Dajo consultants</h3>
+                                    <span id="id_testimonial_client_4" class="testimonial__client">CEO Dajo</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+                        <p id="id_testimonial_description_4" class="testimonial__description">
+                        The service was very attentive at all times. They answered my questions and also gave me suggestions to make my website perfect. Highly recommended service
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-testimonial"></div>
             </div>
         </section>
 
@@ -1194,6 +1333,8 @@
     </a>
 
 
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
