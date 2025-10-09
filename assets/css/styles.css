@@ -957,6 +957,9 @@ img{
     color: #FFD700;
     margin-right: 0.25rem;
     font-size: 1rem;
+    font-weight: 900; /* Hace que se vean más sólidas */
+    -webkit-text-stroke: 1px #FFD700; /* Rellena el contorno */
+
 }
 
 /* Descripción del testimonio */
