@@ -74,7 +74,7 @@
                     <li class="nav__item">
                         <a href="#portfolio" class="nav__link active-link">
                             <!-- <i id="portafolio" class="uil uil-scenery nav__icon"></i>Portafolio -->
-                            <span id="i-portafolio">Portafolio</span>
+                            <span id="i-portafolio">Projects</span>
                         </a>
                     </li>
 
@@ -90,7 +90,7 @@
                             <span id="i-contactanos">Contact</span>
                         </a>
                     </li>
-                    <!--                     <select class="nav__item nav__link active-link-combo" id="idioma" onchange="cambiarIdioma()">
+<!--                     <select class="nav__item nav__link active-link-combo" id="idioma" onchange="cambiarIdioma()">
                         <option id="id_select" value="">Select language</option>
                         <option id="es" value="es">Spanish</option>
                         <option id="en" value="en">English</option>
@@ -99,7 +99,6 @@
                 </ul>
                 <br>
                 <i class="uil uil-times nav__close" id="nav-close"></i>
-
                 <i class="uil uil-translate translate-icon" onclick="mostrarComboIdioma()"></i>
 
             </div>
@@ -122,27 +121,33 @@
 
         </nav>
     </header>
+    <br>
+    <br>
+    <br>
 
     <!--==================== MAIN ====================-->
     <main class="main">
-
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-
-            <div class="home__container contaider grid">
-                <div class="home__content grid">
-                    <div class="home__social" style="margin-left: 10px; margin-top:-695%;">
-
+        <!--==================== COMBINED HOME SECTION ====================-->
+        <section class="home__combined section" id="home">
+            <div class="container">
+                <div class="home__wrapper grid">
+                    <!-- Profile Image -->
+                    <div class="home__profile">
+                        <div class="home__img-wrapper">
+                            <img src="assets/img/perfil-removebg-preview.png"
+                                alt="Emmanuel Sandoval - Backend Developer" class="home__img">
+                        </div>
                     </div>
-                    <div class="home__img ">
-                        <!-- Cambia la extensión a .png si es necesario -->
-                        <img id="profile-img" src="assets/img/perfil-removebg-preview.png" alt="Perfil"
-                            class="about__img">
-                    </div>
-                    <div class="home__data">
-                        <h1 id="h1-hi" class="home__title"> Hi, I am Emmanuel. </h1>
-                        <h3 id="h3-dev" class="home__subtitle">Backend Developer</h3>
-                        <p id="p_description" class="home__description" style="text-align: justify; margin-right: 5px;">
+
+                    <!-- Content Section -->
+                    <div class="home__content-wrapper">
+                        <!-- Introduction -->
+                        <p class="home__greeting">Hi, I am</p>
+                        <h1 class="home__name">Emmanuel Sandoval</h1>
+                        <h2 class="home__profession">Backend Developer & Cloud Architect</h2>
+
+                        <!-- Bio -->
+                        <p class="home__bio">
                             I am a Senior Software Engineer and Cloud Architect with over 6 years of experience in
                             enterprise software development. Currently serving as Cloud Architect at Pakal
                             Technological Solutions, I lead cross-functional teams delivering innovative digital
@@ -151,70 +156,44 @@
                             My expertise includes backend development with Java Spring Boot, microservices architecture,
                             and cloud platforms. I've led critical projects like the Banamex-Citibank migration,
                             reducing deployment times by 85% and improving system performance by 50%.
-                            <br><br>
-                            I specialize in scalable enterprise applications, secure authentication systems (JWT/OAuth2),
-                            and database optimization using IBM MQ, MongoDB, and RESTful APIs.
                         </p>
-                    
-                        <div class="about__buttons">
-                            <a id="id_contact" href="#contact" class="button button--center">
-                                Contact me <i class="uil uil-message button-icon"></i>
+
+                        <!-- Stats -->
+                        <div class="home__stats">
+                            <div class="home__stat-item">
+                                <span class="home__stat-number">06+</span>
+                                <span class="home__stat-label">Years<br>Experience</span>
+                            </div>
+                            <div class="home__stat-item">
+                                <span class="home__stat-number">7+</span>
+                                <span class="home__stat-label">Completed<br>Projects</span>
+                            </div>
+                            <div class="home__stat-item">
+                                <span class="home__stat-number">04</span>
+                                <span class="home__stat-label">Companies<br>Job</span>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="home__actions">
+                            <a href="#contact" class="button">
+                                Contact me
+                                <i class="uil uil-message button-icon"></i>
+                            </a>
+                            <a href="assets/pdf/EmmanuelSandovalResume.pdf" download class="button button--secondary">
+                                Download CV
+                                <i class="uil uil-download-alt button-icon"></i>
                             </a>
                         </div>
-                    </div>
 
-                </div>
-
-                <div class="about__buttons">
-                    <a href="#about" class="home__scroll-button button--flex">
-                        <i class="uil uil-mouse home__scroll-mouse"></i>
-                        <span id="id_scroll" class="home__scroll-name">Scroll down</span>
-                        <i class="uil uil-arrow-down home___scroll-arrow"></i>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 id="id_about" class="section__title">About me</h2>
-            <span id="id_introduction" class="section__subtitle">Introduction</span>
-            <div class="about__container conainer grid">
-                <img src="assets/img/PAKAL-1.jpg" alt="" class="about__img">
-                <div class="about__data">
-                    <p id="id_about__description" class="about__description"
-                        style="text-align: justify; margin-right: 5px;">
-                        Senior Software Engineer specializing in enterprise-level backend development and cloud
-                        architecture. Graduated in Computer Engineering from the National Technological Institute of
-                        Mexico (ITCH) in 2017. With extensive experience in financial technology sector, I have led
-                        multiple digital transformation projects, migration initiatives, and implemented innovative
-                        solutions that have significantly improved operational efficiency and system performance across
-                        major banking institutions.
-                    </p>
-                    <div class="about__info" style="text-align: justify; margin-right: 5px;">
-                        <div>
-                            <span class="about__info-title"> 06+</span>
-                            <span id="id_years" class="about__info-name">Years <br> Experience</span>
-
+                        <!-- Scroll Down -->
+                        <div class="home__scroll">
+                            <a href="#skills" class="home__scroll-button">
+                                <i class="uil uil-mouse home__scroll-mouse"></i>
+                                <span class="home__scroll-name">Scroll down</span>
+                                <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                            </a>
                         </div>
-                        <div>
-                            <span class="about__info-title">7+</span>
-                            <span id="id_completed" class="about__info-name">completed<br> Projects</span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">04</span>
-                            <span id="id_companies" class="about__info-name">Companies<br> Job</span>
-                        </div>
-
-                    </div>
-                    <div class="about__buttons">
-                        <a id="id_download" download="" href="assets/pdf/EmmanuelSandovalResume.pdf"
-                            class="button button--flex">
-                            Download CV<i class="uil uil-arrow-down button__icon"></i>
-                        </a>
                     </div>
                 </div>
             </div>
