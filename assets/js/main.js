@@ -221,61 +221,43 @@ themeButton.addEventListener('click', () => {
 
 
 // ==================== CONTACT ====================
-// Validate email de web site
-function validate(email) {
-    const emailRegex = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
-    
-    if (!email || email.trim() === '') {
-        alert('Please enter an email address');
-        return false;
-    }
-    
-    if (!emailRegex.test(email.toLowerCase())) {
-        alert('Invalid email address. Please enter a valid email.');
-        return false;
-    }
-    
-    return true;
-}
+// Validate email and message ok  
 
-// Uso mejorado con el formulario
-const $form = document.querySelector('form');
-if ($form) {
-    $form.addEventListener('submit', handleSubmit);
-    
-    async function handleSubmit(event) {
-        event.preventDefault();
+            const $form = document.querySelector('form');
+                if($form){
+                    $form.addEventListener('submit', handleSubmit);
+                    console.log('mesagge' + $form);
+                    async function handleSubmit(event) {
+                    event.preventDefault();
+                    const form = new FormData(this);
+                    const response = await fetch(this.action, {
+                        method: this.method,
+                        body: form,
+                        headers: {
+                            'Accept': 'Application/json'
+                        }
         
-        const emailInput = this.querySelector('input[type="email"]');
-        const emailValue = emailInput?.value || '';
+                    })
+                    if (response.ok) {
+                        this.reset();
+                        alert('Gracias por contactarme');
+                    }
         
-        // Validar email antes de enviar
-        if (!validate(emailValue)) {
-            emailInput?.focus();
-            return;
-        }
-        
-        try {
-            const form = new FormData(this);
-            const response = await fetch(this.action, {
-                method: this.method,
-                body: form,
-                headers: {
-                    'Accept': 'application/json'
                 }
-            });
-            
-            if (response.ok) {
-                this.reset();
-                alert('Thank you for contacting me! I will respond soon.');
-            } else {
-                alert('There was an error sending your message. Please try again.');
-            }
-        } catch (error) {
-            alert('Connection error. Please check your internet and try again.');
-        }
-    }
-}
+                }
+
+
+                // Validate email de web site
+                    function validate(email) {
+                        var expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+                        var okvalide = expReg.test(email);
+                        if (okvalide == true) {
+                           
+                        } else {
+                        }
+
+                    }
+
 
 function googleTranslateElementInit() {
 	new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,fr,it,pt,de,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
