@@ -1,0 +1,249 @@
+/* ==================== PORTFOLIO SWIPER IMPROVEMENTS (OPTIMIZADO) ==================== */
+
+/* Contenedor principal del Swiper */
+.portfolio__container.swiper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+/* Wrapper del carrusel */
+.portfolio__container .swiper-wrapper {
+    align-items: stretch;
+}
+
+/* Slides individuales - OPTIMIZADO PARA IMÁGENES GRANDES */
+.portfolio__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: transparent;
+    border-radius: 0.75rem;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    min-height: auto;
+}
+
+.portfolio__content:hover {
+    box-shadow: none;
+    transform: none;
+}
+
+/* Imagen del portfolio - AHORA MÁS GRANDE */
+.portfolio__img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.portfolio__content:hover .portfolio__img {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Datos del portfolio */
+.portfolio__data {
+    width: 100%;
+    text-align: center;
+}
+
+/* Título del portfolio */
+.portfolio__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--title-color);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+/* Descripción del portfolio */
+.portfolio__description {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Botones de navegación mejorados */
+.portfolio__container .swiper-button-next,
+.portfolio__container .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio__container .swiper-button-prev {
+    left: 10px;
+}
+
+.portfolio__container .swiper-button-next {
+    right: 10px;
+}
+
+.portfolio__container .swiper-button-next:hover,
+.portfolio__container .swiper-button-prev:hover {
+    background-color: var(--first-color);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.portfolio__container .swiper-button-next:disabled,
+.portfolio__container .swiper-button-prev:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Iconos de los botones */
+.portfolio__container .swiper-button-next::after,
+.portfolio__container .swiper-button-prev::after {
+    font-size: 20px;
+    color: white;
+}
+
+/* Paginación mejorada */
+.portfolio__container .swiper-pagination {
+    bottom: -3rem;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.portfolio__container .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: var(--text-color);
+    opacity: 0.4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.portfolio__container .swiper-pagination-bullet-active {
+    background-color: var(--first-color);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+@media screen and (max-width: 1024px) {
+    .portfolio__container.swiper {
+        padding: 2rem 0.5rem;
+    }
+
+    .portfolio__content {
+        padding: 1rem 0.5rem;
+    }
+
+    .portfolio__img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio__container.swiper {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .portfolio__content {
+        padding: 0.75rem;
+    }
+
+    .portfolio__img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 0.75rem;
+    }
+
+    .portfolio__container .swiper-button-next,
+    .portfolio__container .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        top: 40%;
+    }
+
+    .portfolio__container .swiper-button-next::after,
+    .portfolio__container .swiper-button-prev::after {
+        font-size: 16px;
+    }
+
+    .portfolio__container .swiper-button-prev {
+        left: -25px;
+    }
+
+    .portfolio__container .swiper-button-next {
+        right: -25px;
+    }
+
+    .portfolio__title {
+        font-size: 1.1rem;
+    }
+
+    .portfolio__description {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .portfolio__container.swiper {
+        padding: 1rem 0;
+    }
+
+    .portfolio__content {
+        min-height: auto;
+        padding: 0.5rem;
+    }
+
+    .portfolio__img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem;
+        border-radius: 0.25rem;
+    }
+
+    .portfolio__title {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .portfolio__description {
+        font-size: 0.75rem;
+    }
+
+    .portfolio__container .swiper-button-next,
+    .portfolio__container .swiper-button-prev {
+        width: 36px;
+        height: 36px;
+        display: none;
+    }
+
+    .portfolio__container .swiper-pagination {
+        bottom: -2.5rem;
+    }
+
+    .portfolio__container .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+    }
+}
